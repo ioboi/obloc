@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.18.1
+# v0.18.4
 
 using Markdown
 using InteractiveUtils
@@ -175,13 +175,13 @@ begin
 	
 			const DAYNAMES = ["Mo", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 		
-			const width = 1800;
+			const width = 600;
 			const height = 400;
 			const svg = DOM.svg(width, height);
 		
 			const xScale = d3.scaleBand()
 	  			.range([ 0, width - margins.left - margins.right ])
-				.domain(d3.range(d3.min(data.map(d=>d.week)), 53))
+				.domain(weeks)
 				.paddingInner(0.05);
 	
 			const yScale = d3.scaleBand()
