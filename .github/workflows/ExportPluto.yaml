@@ -36,8 +36,8 @@ jobs:
               # more parameters can go here
             )'
 
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
